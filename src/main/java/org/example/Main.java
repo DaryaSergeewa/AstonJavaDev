@@ -2,7 +2,6 @@
 package org.example;
 
 // Примера ради импортируем только статический метод из класса ClassWithStatic
-import static org.example.ClassWithStatic.rememberIt;
 import static org.example.ClassWithStatic.sayHi;
 
 public class Main {
@@ -24,7 +23,7 @@ public class Main {
         obj1.getNumArray();
 
         // Проверка сеттеров класса ClassWithGetAndSet и метода rememberIt()
-        obj2.setName(rememberIt());
+        obj2.setName(ClassWithStatic.rememberIt());
         obj2.setNum(777);
         obj2.setNumArray(new int[]{0, 0, 0});
 
